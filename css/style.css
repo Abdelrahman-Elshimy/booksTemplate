@@ -1,0 +1,168 @@
+/*** Google Fonts ******************/
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+header,
+section,
+body
+{
+    overflow-x: hidden;
+}
+/* store all variables and fonts and colors ********/
+:root {
+    --Snigle-font: "Sniglet",cursive;
+    --Rubik: "Rubik",cursive;
+    --Patua: "Patua One",cursive;
+    --Lobster: "Lobster",cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f );
+    --light-gray: rgba(255, 255, 255, 1);
+}
+
+/* Start style header  */
+header {
+    background: var(--bggradient);
+}
+header a{
+    font-family: var(--Snigle-font);
+    font-size: .9em;
+    color: whitesmoke;
+    transition: all .5s ease-in-out;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+}
+header .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+header .dropdown-content a:hover {
+    background: #dddddd;
+    transition: all .5s ease-in-out;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+header .nav-item:last-child {
+    padding-right: 10em;
+
+}
+header .nav-item {
+    padding: .9em;
+}
+header .nav-link:hover {
+    color: #000;
+}
+header .row .col-lg-5 {
+    padding: 4.2vmin 1vmin;
+}
+header .row .col-lg-5 img {
+    width: 90%;
+}
+header .row .col-lg-7  {
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    font-family: var(--Rubik);
+    color: white;
+}
+header .row .col-lg-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+header .row .col-lg-7 h1 {
+    font-size: 7vmin;
+    font-weight: bold;
+    padding: .01em 0em;
+}
+header .row .col-lg-7 p {
+    padding: 1vmin 5vmin;
+}
+header .row .col-lg-7 button {
+    border-radius: 30px;
+    font-weight: bold;
+}
+/* end style header  */
+
+
+/* start main section  */
+/* sart info-section  */
+
+.info-section {
+    padding: 20vmin 0;
+}
+
+.info-section img {
+    width: 80%;
+    opacity: .8;
+    border-radius: .2em;
+}
+.info-section .talks {
+    position: relative;
+}
+.info-section .talks .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -20vmin;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.5);
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+.info-section .talks .panel h1 {
+    font-weight: bold;
+}
+.info-section .talks .panel p {
+    color: rgba(0,0,0,.5);
+}
+/* end info-section  */
+
+/* start deatures style  */
+
+.features .cover{
+    height: 400px;
+    width: 100%;
+    background-image: url('../assets/pexels-photo-452738.jpeg');
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -50px;
+}
+.features .cover .content {
+    background: rgba(0,0,0,.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.features .cover .content h1 {
+    font-family: var(--Patua);
+    font-size: 6vmin;
+}
+.features .cover .content p {
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: #e5e5e5;
+}
+/* end deatures style  */
+
+/* end main section  */
