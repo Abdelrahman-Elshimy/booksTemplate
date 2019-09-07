@@ -163,6 +163,91 @@ header .row .col-lg-7 button {
     font-size: 2vmin;
     color: #e5e5e5;
 }
+.numbers {
+    margin-top: -10vmin;
+    z-index: 2;
+}
+.numbers .rect{
+    background: white;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 20px 0px rgba(255,0,0,.3);
+    z-index: 2;
+}
+.numbers .rect h1 {
+    color: tomato;
+}
+.numbers .rect p {
+    font-family: var(--Patua)
+}
+
 /* end deatures style  */
+
+
+/* start style purchase  */
+.purchase > h1 {
+    font-family: var(--Lobster);
+    margin-top: 10vmin;
+}
+.purchase > p {
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 6vmin;
+}
+.purchase .cards .card {
+    width: 22rem;
+    margin: 3vmin;
+}
+.purchase .cards .card div {
+    margin: 0;
+    padding: 0;
+}
+.purchase .cards .card .title {
+    background: rgba(208, 241, 241, .199);
+    padding: 1rem 2.5rem;
+    font-size: 2.5vmin;
+}
+.purchase .cards .card .card-text {
+    padding: 2.5rem 3rem;
+    color: var(--light-black)
+}
+.purchase .cards .card .pricing {
+    background: rgba(208, 241, 241, .199);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+.purchase .cards .card .pricing h1 {
+    padding: 20px 0;
+}
+/* end style purchase  */
+
+/* start style download  */
+.download {
+    background: var(--bggradient);
+    margin-top: 50px;
+    padding: 50px 0;
+}
+.download > h2 {
+    color: whitesmoke;
+    font-size: 6vmin;
+    padding-bottom: 20px;
+}
+.download > p {
+    padding: 0 4em;
+    color: var(--light-gray);
+    font-size: 2.5vmin;
+    padding-bottom: 2em;
+}
+.download .platform .desktop {
+    background: white;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* end style download  */
 
 /* end main section  */
